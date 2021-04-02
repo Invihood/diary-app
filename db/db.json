@@ -1,0 +1,24 @@
+{
+  "records": [
+    {
+      "title": "My new website",
+      "body": "Real text. Not really real but from my heart. Lorem  impsum. Not really real but from my heart. Lorem  impsum. Not really real but from my heart. Lorem  impsum.",
+      "id": 1
+    },
+    {
+      "title": "Welcome party!",
+      "body": "New site....",
+      "id": 2
+    },
+    {
+      "title": "Lera first UI/UX lesson",
+      "body": "Very nice!!!",
+      "id": 3
+    },
+    {
+      "title": "Test",
+      "body": "Test",
+      "id": 4
+    }
+  ]
+}
