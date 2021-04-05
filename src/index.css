@@ -84,3 +84,15 @@ code {
 .record-list a:hover h2 {
   color: #306754;
 }
+
+.create form * {
+  display: block;
+}
+
+.create h2 {
+  padding-bottom: 20px;
+}
+
+.create form input, .create form select, .create form textarea {
+  margin-bottom: 20px;
+}

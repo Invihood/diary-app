@@ -14,10 +14,23 @@
       "title": "Lera first UI/UX lesson",
       "body": "Very nice!!!",
       "id": 3
+    }
+  ],
+  "folders": [
+    {
+      "name": "Name1",
+      "id": 1
     },
     {
-      "title": "Test",
-      "body": "Test",
+      "name": "Name2",
+      "id": 2
+    },
+    {
+      "name": "Name3",
+      "id": 3
+    },
+    {
+      "name": "Name4",
       "id": 4
     }
   ]
