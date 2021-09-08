@@ -1,5 +1,5 @@
 $border-color: rgb(242, 242, 242);
-
+$main-theme-color: rgb(48, 103, 84);
 
 body {
   margin: 0;
@@ -33,7 +33,7 @@ code {
   background: white;
 
   h1 {
-    color: #306754;
+    color: $main-theme-color;
   }
 
   a {
@@ -42,7 +42,7 @@ code {
     padding: 6px;
 
     &:hover {
-      color: #306754;
+      color: $main-theme-color;
     }
   }
 
@@ -61,14 +61,15 @@ code {
 }
 
 .page-wrapper {
+  min-height: 100vh;
   display: flex;
   padding-top: 70px;
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 1px solid $border-color;
 }
 .left-menu {
   flex: 0 1 300px;
   box-sizing: border-box;
-  border-right: 1px solid #f2f2f2;
+  border-right: 1px solid $border-color;
 }
 
 .content {
@@ -77,29 +78,43 @@ code {
   background: white;
 }
 
-.record-list h1 {
-  color: #306754;
-  padding: 10px 0 30px;
+.record-list {
+  h1 {
+    color: $main-theme-color;
+    padding: 10px 0 30px;
+  }
+
+  a {
+    text-decoration: none;
+    padding-bottom: 20px;
+    display: block;
+
+    &:hover h2 {
+      color: $main-theme-color;
+    }
+  }
 }
 
-.record-list a{
-  text-decoration: none;
-  padding-bottom: 20px;
-  display: block;
+.create {
+  form * {
+    display: block;
+  }
+
+  form input, form select, form textarea {
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    padding-bottom: 20px;
+  }
 }
 
-.record-list a:hover h2 {
-  color: #306754;
-}
+.footer-menu {
+  width: 100%;
+  height: auto;
+  background: $main-theme-color;
 
-.create form * {
-  display: block;
-}
-
-.create h2 {
-  padding-bottom: 20px;
-}
-
-.create form input, .create form select, .create form textarea {
-  margin-bottom: 20px;
+  .footer-menu-block {
+    height: 100px;
+  }
 }
