@@ -20,6 +20,13 @@ code {
   color: #333;
 }
 
+.App {
+  background-image: url(./img/background-books.jpeg);
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-size: 200px 200px;
+}
+
 .navbar {
   padding: 20px;
   display: flex;
@@ -30,19 +37,20 @@ code {
   position: fixed;
   overflow: hidden;
   top: 0;
-  background: white;
+  background: $main-theme-color;
 
   h1 {
-    color: $main-theme-color;
+    color: white;
   }
 
   a {
     margin-left: 16px;
     text-decoration: none;
     padding: 6px;
+    color: white;
 
     &:hover {
-      color: $main-theme-color;
+      color: black;
     }
   }
 
@@ -63,13 +71,11 @@ code {
 .page-wrapper {
   min-height: 100vh;
   display: flex;
-  padding-top: 70px;
-  border-bottom: 1px solid $border-color;
+  padding-top: 69px;
 }
 .sidebar {
   flex: 0 1 300px;
   box-sizing: border-box;
-  border-right: 1px solid $border-color;
   height: auto;
 
   .left-menu {
