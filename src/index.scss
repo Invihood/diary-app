@@ -66,10 +66,16 @@ code {
   padding-top: 70px;
   border-bottom: 1px solid $border-color;
 }
-.left-menu {
+.sidebar {
   flex: 0 1 300px;
   box-sizing: border-box;
   border-right: 1px solid $border-color;
+  height: auto;
+
+  .left-menu {
+    position: sticky;
+    top: 70px;
+  }
 }
 
 .content {
