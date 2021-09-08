@@ -1,3 +1,6 @@
+$border-color: rgb(242, 242, 242);
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -23,25 +26,29 @@ code {
   align-items: center;
   width: 100%;
   margin: 0 auto;
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 1px solid $border-color;
   position: fixed;
   overflow: hidden;
   top: 0;
   background: white;
-}
-.navbar h1 {
-  color: #306754;
-}
-.navbar .links {
-  margin: 0 auto;
-}
-.navbar a {
-  margin-left: 16px;
-  text-decoration: none;
-  padding: 6px;
-}
-.navbar a:hover {
-  color: #306754;
+
+  h1 {
+    color: #306754;
+  }
+
+  a {
+    margin-left: 16px;
+    text-decoration: none;
+    padding: 6px;
+
+    &:hover {
+      color: #306754;
+    }
+  }
+
+  .links {
+    margin: 0 auto;
+  }
 }
 
 .folder-title{
