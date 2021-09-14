@@ -49,8 +49,8 @@ const Create = () => {
                         <option key={i} value={folder.id}>{folder.name}</option>
                     ))}
                 </select>
-                {!isPending && <button>Add Blog</button>}
-                {isPending && <button disabled>Adding Blog...</button>}
+                {!isPending && <button className="main-button">Add Blog</button>}
+                {isPending && <button className="main-button" disabled>Adding Blog...</button>}
             </form>
         </div>
     );

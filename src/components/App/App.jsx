@@ -18,21 +18,11 @@ const App = () => {
           <Sidebar />
           <div className="content">
             <Switch>
-              <Route exact path="/">
-                <Home />
-              </Route>
-              <Route path="/create">
-                <Create />
-              </Route>
-              <Route path="/records/:id">
-                <Record />
-              </Route>
-              <Route path="/registration">
-                <Registration />
-              </Route>
-              <Route path="*">
-                <NotFound></NotFound>
-              </Route>
+              <Route exact path="/" component={Home}></Route>
+              <Route path="/create" component={Create}></Route>
+              <Route path="/records/:id" component={Record}></Route>
+              <Route path="/registration" component={Registration}></Route>
+              <Route path="*" component={NotFound}></Route>
             </Switch>
           </div>
         </div>
