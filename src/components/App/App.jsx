@@ -6,6 +6,7 @@ import Record from '../Record/Record';
 import NotFound from '../NotFound/NotFound';
 import Footer from '../Footer/Footer';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import Registration from '../Registration/Registration';
 
 const App = () => {
 
@@ -25,6 +26,9 @@ const App = () => {
               </Route>
               <Route path="/records/:id">
                 <Record />
+              </Route>
+              <Route path="/registration">
+                <Registration />
               </Route>
               <Route path="*">
                 <NotFound></NotFound>

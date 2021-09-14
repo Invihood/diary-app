@@ -8,6 +8,10 @@ const Navbar = () => {
                 <Link to="/">Home</Link>
                 <Link to="/create">New Record</Link>
             </div>
+            <div className="links-aside">
+                <Link to="/login">Log in</Link>
+                <Link to="/registration">Sign in</Link>
+            </div>
         </nav>
     );
 }
