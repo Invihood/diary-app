@@ -17,16 +17,16 @@ async (req,res) => {
             return res.status(400).json({message: "Incorrect request", errors})
         }
 
-        const {email, password} = req.body;
+        const {name, surname, email, password} = req.body;
 
         const candidate = await User.findOne({email});
 
         if (candidate) {
-            return res.status(400).json({message:`User with such ${email} already exists`});
+            return res.status(499).json({message:`User ${name} with such ${email} already exists`});         
         }
         
         const hashPassword = await bcrypt.hash(password, 8);
-        const user = new User({email, password: hashPassword});
+        const user = new User({name, surname, email, password: hashPassword});
         await user.save();
         return res.json({message: "User was created"});
 
@@ -38,7 +38,7 @@ async (req,res) => {
 
 router.post('/login', async (req,res) => {
     try {
-        const {email, password} = req.body;
+        const {name, surname, email, password} = req.body;
         const user = await User.findOne({email});
 
         if (!user) {
@@ -57,6 +57,8 @@ router.post('/login', async (req,res) => {
             token,
             user: {
                 id: user.id,
+                name: user.name,
+                surname: user.surname,
                 email: user.email,
                 avatar: user.avatar
             }
