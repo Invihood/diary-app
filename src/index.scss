@@ -52,15 +52,29 @@ code {
     &:hover {
       color: black;
     }
+    
+    &:first-child {
+      margin-left: 0px;
+    }
   }
 
   .links {
     margin: 0 auto;
-    padding-left: 40px;
   }
 
   .links-aside {
-    padding-right: 40px;
+    position: absolute;
+    right: 80px;
+
+    .logout {
+      padding: 6px;
+      color: white;
+      cursor: pointer;
+
+      &:hover {
+        color: black;
+      }
+    }
   }
 }
 
@@ -83,6 +97,7 @@ code {
   border: none;
   border-radius: 5px;
   padding: 10px 22px;
+  cursor: pointer;
 }
 
 .folder-title{
