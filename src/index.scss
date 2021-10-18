@@ -41,6 +41,12 @@ code {
 
   h1 {
     color: white;
+
+    a {
+      &:hover {
+        color: white;
+      }
+    }
   }
 
   a {

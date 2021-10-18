@@ -8,7 +8,7 @@ const Navbar = () => {
 
     return (  
         <nav className="navbar">
-            <h1>Diary</h1>
+            <h1><Link to="/">Diary</Link></h1>
             {isAuth &&
                 <div className="links">
                     <Link to="/">Home</Link>
