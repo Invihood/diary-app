@@ -3,15 +3,15 @@ $main-theme-color: rgb(48, 103, 84);
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -58,7 +58,7 @@ code {
     &:hover {
       color: black;
     }
-    
+
     &:first-child {
       margin-left: 0px;
     }
@@ -106,7 +106,7 @@ code {
   cursor: pointer;
 }
 
-.folder-title{
+.folder-title {
   padding: 20px;
 }
 
@@ -159,7 +159,9 @@ code {
     display: block;
   }
 
-  form input, form select, form textarea {
+  form input,
+  form select,
+  form textarea {
     margin-bottom: 20px;
   }
 
@@ -176,4 +178,14 @@ code {
   .footer-menu-block {
     height: 100px;
   }
+}
+
+.content a {
+  color: $main-theme-color;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.fade-text {
 }

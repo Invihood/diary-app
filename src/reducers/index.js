@@ -5,8 +5,11 @@ import fileReducer from "./fileReducer";
 import userReducer from "./userReducer";
 
 const rootReducer = combineReducers({
-    user: userReducer,
-    files: fileReducer
-})
+  user: userReducer,
+  files: fileReducer,
+});
 
-export const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(thunk)))
+export const store = createStore(
+  rootReducer,
+  composeWithDevTools(applyMiddleware(thunk))
+);

@@ -8,7 +8,7 @@ const RecordList = ({records, title}) => {
                 <div className="rec-preview" key={record.id}>
                     <Link to={`/records/${record.id}`}>
                         <h2>{record.title}</h2>
-                        <p>{record.body}</p>
+                        <p className="fade-text">{record.body.substring(0, 50)}</p>
                     </Link>                 
                 </div>
             ))}
